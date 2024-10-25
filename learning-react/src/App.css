@@ -1,0 +1,141 @@
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+
+.loginDiv {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  
+  background-color: black;
+  border-radius: 5vh;
+  width:30vh;
+  aspect-ratio: 2/1.5;
+  padding: 5vh;
+
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.loginDiv > input {
+  margin-bottom: 5vh;
+  vertical-align: middle;
+}
+
+.appContainer {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.messagesContainer {
+  /* position:absolute; */
+  width: 100%;
+  height: 85%;
+  background: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  margin: 0;
+  padding: 0;
+}
+
+.messageHolder:first-of-type {
+  background-color: #383838;
+  margin-top: auto;
+}
+
+.messageHolder {
+  background-color: #383838;
+  margin-left: 1vw;
+  padding-left: 1vw;
+  margin-right: 1vw;
+  padding-right: 1vw;
+  margin-bottom: 1vw;
+  padding-bottom: 1vw;
+  line-height: 2.5vh;
+  position: relative;
+  overflow-wrap: break-word;
+}
+
+.messageUsername {
+  display: inline-block;
+}
+
+.messageTime {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  margin-right: 1vw;
+}
+
+.message {
+  margin: 0;
+}
+
+.editMessage {
+  user-select: none;
+}
+
+.reactMessage {
+  margin-left: 1vw;
+  user-select: none;
+}
+
+.reactBar {
+  background-color: #1d1d1d;
+  max-width: fit-content;
+  border-radius: 1vw;
+  padding: 0.5vw;
+}
+
+.emojiOption {
+  user-select: none;
+  transition: font-size 100ms linear;
+}
+
+.emojiOption:hover {
+  font-size: 3vh;
+  transition: font-size 100ms linear;
+}
+
+.emojiReaction {
+  user-select: none;
+  display: inline-block;
+  padding: 0.5vw;
+  background-color: #1d1d1d;
+  border-radius: 1vw;
+  max-width: fit-content;
+  transition: font-size 100ms linear;
+}
+
+.emojiReaction:first-of-type {
+  display: block;
+}
+
+.emojiReaction:hover {
+  font-size: 2.5vh;
+  transition: font-size 100ms linear;
+}
+
+.messageInput {
+  position: sticky;
+  width: 100%;
+  height: 14%;
+  bottom: 0;
+  border: none;
+  margin: 0;
+  padding: 0;
+  resize: none;
+
+  /* text-align: left; */
+  /* vertical-align: text-top; */
+}
